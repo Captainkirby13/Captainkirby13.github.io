@@ -32,7 +32,7 @@ header {
   padding: 1em;
   text-align: center;
   color: var(--accent2-color);
-  background-color: #2fd62fbe;
+  background-color: #000000be;
 }
 header > h1 {
   color: #345432;
