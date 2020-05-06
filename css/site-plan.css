@@ -11,7 +11,7 @@ html{background-color: var(--primary-color);
 }
 body{max-width: 900px;
     margin: 0 auto;
-    background-color: 6a7152;
+    background-color: #6a7152;
     padding: 1em
 }
 img{max-width: 100%}
@@ -28,7 +28,7 @@ h6 {
         padding: 1em;
         text-align: center;
         color: var(--accent2-color);
-        background-color: 6A7152
+        background-color: #6A7152;
     } 
     header > h1 {
         color: 
