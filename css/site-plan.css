@@ -86,6 +86,6 @@ nav a:visited {
   color: rgb(223, 25, 25);
 }
 nav a:hover {
-  color: #254D32;
+  color: #254d32;
   background-color: --accent2-color;
 }
