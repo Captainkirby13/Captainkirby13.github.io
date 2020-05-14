@@ -1,16 +1,20 @@
 body {
-    font-size: 16px;
-    background-color: #bbeedd;
+  font-size: 16px;
+  background-color: #bbeedd;
 }
-header, 
-main, 
+header,
+main,
 footer {
-    max-width: 960px;
-    margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
 }
-
+header {
+  background-color: darkgoldenrod;
+  color: whitesmoke;
+}
 main section p {
-    margin: 5px;
-    border: 1px solid cyan;
-    background-color: #eee;
+  margin: 5px;
+  border: 1px solid cyan;
+  padding: 5px;
+  background-color: #eee;
 }
