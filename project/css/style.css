@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  background-color: white;
+  background-color: burlywood;
   font-family: Arial, Helvetica, sans-serif;
 }
 header,
@@ -19,13 +19,13 @@ header {
   justify-content: space-evenly;
   text-align: center;
   color: whitesmoke;
-  background-color: darkgoldenrod;
+  background-color: darkgreen;
 }
 main section p {
   margin: 5px;
-  border: 1px solid green;
+  border: 1px solid black;
   padding: 5px;
-  background-color: ghostwhite;
+  background-color: whitesmoke;
 }
 ul {
   display: black;
@@ -42,7 +42,7 @@ header > img {
   height: auto;
 }
 h1 {
-  color: black;
+  color: gold;
 }
 header nav ul {
   display: flex;
@@ -50,7 +50,7 @@ header nav ul {
   list-style: none;
 }
 header nav ul li a {
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
   font-size: 1.1em;
   font-family: Impact, "Arial Narrow Bold", sans-serif;
