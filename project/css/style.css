@@ -16,7 +16,7 @@ header {
   border-radius: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   text-align: center;
   color: whitesmoke;
   background-color: darkgreen;
@@ -78,4 +78,9 @@ footer {
 .social img {
   width: 50px;
   height: auto;
+}
+.footer_tiny {
+  grid-column: 1/3;
+  text-align: center;
+  
 }
