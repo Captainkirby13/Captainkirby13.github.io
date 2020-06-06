@@ -73,12 +73,12 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  padding: 20px 2em;
+  padding: 20px .8em;
   align-items: center;
   justify-content: center;
 }
 .contact {
-  text-align: left;
+  text-align: center;
   padding: 0.2em;
 }
 .social {
