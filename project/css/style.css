@@ -109,7 +109,7 @@ footer {
   grid-row: 1;
 }
 nav a:hover {
-  color: #241f2d;
+  color: black;
   background-color: yellowgreen;
   border-radius: 5px;
 }
