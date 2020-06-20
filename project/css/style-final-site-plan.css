@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #484349;
+    --secondary-color: #699ba4;
+    --accent1-color: #8af3ff;
+    --accent2-color: #18a999;
+    --accent3-color: #109648;
+    --heading-font: ;
+    --paragraph-font: ;
+}
+
+html {
+    background-color: var(--accent3-color)
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: ghostwhite;
+    padding: 1.5em;
+}
+img {
+    max-width: 150px;
+    border: solid black 2px;
+    background-color: var(--accent3-color)  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+    border: black solid 2px;
+    box-shadow: grey 0px 3px 3px 2px;
+}
+
+
+p {
+    font-family: var(--paragraph-font);
+    padding: 1em;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.primary {
+    padding: 35px;
+    color: white;
+    background-color: var(--primary-color)
+}
+
+.secondary {
+    padding: 35px;
+    color: white;
+    background-color: var(--secondary-color)
+}
+
+.accent1 {
+    padding: 35px;
+    background-color: var(--accent1-color)
+}
+
+.accent2 {
+    padding: 35px;
+    border: black solid .75px;
+    background-color: var(--accent2-color)
+}
+
+.accent3 {
+    padding: 35px;
+    color: white;
+    background-color: var(--accent3-color)
+}
+.colors {
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+}
+nav {
+    background-color: var(--secondary-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.25em;
+    border: solid black 1.5px;
+}
+
+nav>ul {
+    font-family: var(--heading-font);
+    list-style-type: none;
+    display: flex
+}
+
+nav a {
+    color: white;
+    padding: 1em;
+    min-width: 70px
+}
+
+nav a:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color)
+}
+
+nav a:visited {
+    color: var(--accent1-color);
+}
+
+footer {
+    font-family: var(--paragraph-font);
+    font-weight: bold;
+    text-align: center;
+}
