@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The Temple Inn & Suites Reservation page, with reservation information and contact details. Make your reservation with us today!">
+    <title>"Temple Inn & Suites | Make Your Reservation | 215-529-9999"</title>
+    <link rel="stylesheet" href="/project/css/style.css">
+</head>
+
+<body>
+    <header>
+        <img class="heroimg" src="images/bed.png" width="960" alt="logo">
+        <h1>Temple Inn & Suites</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="temple-spotlight.html">Temple Spotlight</a></li>
+                <li><a class="active" href="#">Reservations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img class="heroimg" src="images/yellostonewater.jpg" width="960" alt="Yellowstone Waterfall">
+            <div class="action">
+                <h3>Plan your next trip with ease!</h3>
+                <button>Contact Us</button>
+            </div>
+        </div>
+        <div class="layout4">
+            <section>
+                <h2>Reservation Information</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea architecto recusandae delectus sapiente
+                    minus. Minus dolor cumque vero, soluta quasi quis qui explicabo nam rem veniam corrupti mollitia. At
+                    architecto inventore delectus, dicta, impedit cupiditate amet aspernatur facilis tenetur, maiores
+                    corrupti deleniti reiciendis temporibus dolor explicabo non sint voluptates quae.
+                </p>
+            </section>
+            <div id="feedback">
+                <h2>Make that Reservation!</h2>
+                <form action="reservations_page.php" method="post" target="_blank"
+                    onsubmit="setTimeout(function () { window.location.reload(); }, 10000)">
+                    <ul>
+                        <li>
+                            <label for="name"> Full Name:</label>
+                            <input type="text" id="name" name="user_name">
+                        </li>
+                        <li>
+                            <label for="mail">E-mail Address:</label>
+                            <input type="email" id="mail" name="user_email">
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                        </li>
+                        <li>
+                            <label for="quantity">No. of Guests:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5000">
+                        </li>
+                        <li>
+                            <label for="date">Reservation Date</label>
+                            <input type="date" id="date" name="date">
+                        </li>
+                        <li>
+                            <label for="time">Select a time:</label>
+                            <input type="time" id="time" name="time">
+                        </li>
+                        <li>
+                            <label for="msg">Special Requests:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li class="button2">
+                            <button type="submit">Submit</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <section>
+                <h2>Contact Information</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas numquam dolores nostrum dolore iure
+                    aut!
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            📍Temple Inn & Suites Headquarters<br>
+            355 Wisconsin Avenue <br>
+            Bethesda, MD 20814 <br>
+            📞215-829-9999 <br>
+            ✉info@templinn.com
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com" title="Check us out on Facebook!"><img src="images/facebook-icon.png"
+                    alt="Facebook Icon"> </a>
+            <a href="https://www.instagram.com" title="Follow us on Instagram!"><img src="images/instagram-icon.png"
+                    alt="Instagram Icon"> </a>
+            <a href="https://www.twitter.com" title="Visit us on Twitter!"><img src="images/twitter-icon.png"
+                    alt="Twitter Icon"></a>
+        </div>
+        <div class="footer_tiny">
+            <p>Copyright &copy; 2020 Temple Inn & Suites | All Rights Reserved | Privacy and Cookie Statement |
+                Gavin Giles</p>
+        </div>
+    </footer>
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+        formElement.addEventListener('submit', function (e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+                '! Your Reservation has been made! Thanks for filling the reservation we will send you an email with your information soon!';
+            feedbackElement.style.display = "block";
+        });
+    </script>
+</body>
+
+</html>
