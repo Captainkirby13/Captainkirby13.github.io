@@ -180,3 +180,156 @@ main {
     display: block;
   }
 }
+.layout2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  grid-template-rows: 280px 250px 0px;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+main section ul li {
+  background-color: white;
+  padding: 0.25rem;
+  font-family: "Lato", "Times New Roman", "serif";
+  line-height: 1.3rem;
+  margin: auto;
+}
+
+.ap {
+  background-color: white;
+  text-align: center;
+  padding: 0.25rem;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  line-height: 1.5rem;
+  margin: 0px;
+}
+
+.pic3,
+.pic4,
+.pic5,
+.pic6 {
+  display: block;
+  margin: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 5px 5px 5px green;
+}
+
+.layout3 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 390px 300px 0px;
+  grid-gap: 1rem;
+  padding: 0.5rem;
+}
+
+.freelist {
+  background-color: white;
+  text-align: justify;
+  padding: 0.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+}
+
+.pic7,
+.pic8,
+.pic9 {
+  width: 95%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 black;
+  margin: auto;
+}
+
+.container {
+  text-align: center;
+  padding: 10px 20px;
+  margin: auto;
+}
+
+.pic7:hover,
+.pic8:hover,
+.pic9:hover {
+  transition: transform 0.8s;
+  transform: scale(1.1);
+}
+
+.layout4 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  grid-gap: 1rem;
+  padding: 0.5rem;
+}
+
+#feedback {
+  font: 1em sans-serif;
+  color: #241f2d;
+  padding: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+form {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 450px;
+  /* Form outline */
+  padding: 1em;
+  border: 3px white;
+  border-radius: 1em;
+}
+
+form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 130px;
+  text-align: right;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 10em;
+}
+
+.button2 button {
+  padding: 4px;
+  margin-left: 9em;
+  line-height: 1em;
+  width: 6em;
+  background-color: #e5989b;
+  font-size: 1em;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.button2 button:hover {
+  transition: transform 0.2s;
+  transform: scale(1.1);
+}
