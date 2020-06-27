@@ -26,6 +26,7 @@ main section p {
   padding: 0.7rem;
   font-family: "Lato", "Times New Roman", "serif";
   line-height: 1.5rem;
+  margin: auto;
 }
 nav > ul {
   line-height: 2rem;
