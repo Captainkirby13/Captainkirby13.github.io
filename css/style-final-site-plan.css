@@ -119,3 +119,11 @@ footer {
     font-weight: bold;
     text-align: center;
 }
+.wireframes {
+    background-color:white;
+    max-width: 275px;
+}
+.wireframes1 {
+    background-color:white;
+    max-width: 300px;
+}
