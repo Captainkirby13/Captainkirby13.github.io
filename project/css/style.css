@@ -334,8 +334,4 @@ textarea {
   transition: transform 0.2s;
   transform: scale(1.1);
 }
-.family {
-  grid-column: 1/3;
-  text-align: justify;
-  line-height: 1.5rem;
-}
+
