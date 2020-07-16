@@ -90,7 +90,7 @@ h2 {
 }
 
 img#flower { 
-    width: 300px; 
+    width: 360px; 
     height: 300px; 
     margin-left: 20px; 
     display: flex; 
@@ -98,14 +98,14 @@ img#flower {
 }
 img#flower2{ 
      
-    width: 350px; 
+    width: 360px; 
     height: 300px; 
     margin-right: 20px;  
     border: 2px solid #5D4954;   
 }
 img#flower3{ 
      
-    width: 350px; 
+    width: 375px; 
     height: 300px; 
     margin: 0 auto; 
     border: 2px solid #5D4954;
@@ -118,7 +118,8 @@ main .section-1 {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 25px; 
-    justify-content: space-evenly;    
+    justify-content: space-evenly; 
+    padding: inherit;   
 }
 main .banner { 
     border: 20px solid var(--secondary-color); 
@@ -277,4 +278,11 @@ div.optionB p{
 h3.optionB1 { 
     text-align: left; 
     margin-left: 25px; 
+}
+a:focus,
+.active {
+    color: black;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: .2rem;
+
 }
