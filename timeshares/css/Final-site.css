@@ -13,6 +13,7 @@ body {
     font-size: 16px;
     font-family: 'Lato', sans-serif; 
     background-color: var(--primary-color);
+    padding-left: auto;
 
 }
 
@@ -23,7 +24,7 @@ footer,
 .hero-image {
     max-width: 960px;
     margin: 0 auto;
-    padding:0; 
+    padding: auto; 
 
 }
 header {
@@ -83,7 +84,8 @@ main {
 h2 { 
     text-align: center; 
     margin-top: 0; 
-    padding-top: 10px;  
+    padding-top: 10px;
+    padding: 0em;  
     color: black; 
 }
 
@@ -96,14 +98,14 @@ img#flower {
 }
 img#flower2{ 
      
-    width: 300px; 
+    width: 350px; 
     height: 300px; 
     margin-right: 20px;  
     border: 2px solid #5D4954;   
 }
 img#flower3{ 
      
-    width: 300px; 
+    width: 350px; 
     height: 300px; 
     margin: 0 auto; 
     border: 2px solid #5D4954;
@@ -242,9 +244,8 @@ div.sunset p {
 div.message { 
     display: grid; 
     grid-column: 1/4; 
-    border-right: 5px solid #754F5B;
-    margin-bottom: 10px; 
-  
+    border-right: 5px solid;
+    margin-bottom: 10px;   
 }
 
 h3.message1 { 
