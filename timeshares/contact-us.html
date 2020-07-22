@@ -14,33 +14,33 @@
         <h1>Contact Us today</h1>
         <nav>
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="places-we-cover.html">Our Places</a></li>
-                <li><a href="contact-us.html"> Contact us</a></li>
+                <li><a class="active" href="contact-us.html"> Contact us</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="banner-box">
-            <img class="banner" src="images/banner-boy.jpg" width="920" height="305px"
-            alt="hello there here are 3 diiferent places with 3 diferent floors">
-            <div class="action">
-                <h3>Learn more about the most asked questions and our info.</h3>
-                <a href="home.html"><button>Home Menu</button></a>
-            </div>
+            <img class="banner" src="images/banner-boy.jpg" width="960px" height="305px"
+                alt="hello there here are 3 diiferent places with 3 diferent floors">
         </div>
 
         <div class="layout4">
 
             <section>
-                <h2>FAQ's</h2>
-                <p>Is ths
-                    Where can you find our info?
-
+                <h2>Timeshare Rental FAQ's</h2>
+                <p><strong>What are the benefits of renting timeshares?</strong><br>
+                    When you rent timeshare, you’re able to enjoy spacious accommodations for much less than a costly
+                    hotel room. You’ll also have access to the same resort amenities as the timeshare owner from whom
+                    you rented.<br>
+                    <strong>Are timeshare rentals only available in one or two-week intervals?</strong><br>
+                    No you can only plan on going for a few nights or even one night. The owner of the timeshare owner
+                    on how many nights you can book.
                 </p>
             </section>
             <div id="feedback">
-                <h2>Send us a Message!</h2>
+                <h2>Have a question for us?</h2>
                 <form action="reservations_page.php" method="post" target="_blank"
                     onsubmit="setTimeout(function () { window.location.reload(); }, 10000)">
                     <ul>
@@ -69,15 +69,40 @@
                         </li>
                     </ul>
                 </form>
+                <script>
+                    // get the feedback div element so we can do something with it.
+                    const feedbackElement = document.getElementById('feedback');
+                    // get the form element so we can read what was entered in it.
+                    const formElement = document.forms[0];
+
+                    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                    formElement.addEventListener('submit', function (e) {
+                        // stop the form from doing the default action
+                        e.preventDefault();
+                        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                        feedbackElement.innerHTML = 'Hello' + formElement.user_name.value +
+                            '! Thank you for your message. We will get back with you as soon as possible!';
+                        // make the feedback element visible.
+                        feedbackElement.style.display = "block";
+                    });
+
+                </script>
             </div>
             <section>
                 <h2>Contact Information</h2>
-                <p>Our Email is: 
+                <p><strong>Our Email is:</strong> timesharesforlife@gmail.com<br>
+                    <strong>Our Phone Number is:</strong> 888-1234-567<br>
                 </p>
             </section>
         </div>
     </main>
     <footer>
+        <div class="contact">
+            📍 Timeshares for life<br>
+            355 Wisconsin Avenue<br>
+            California, Barstow 20814<br>
+            📞 888-1234-567<br>
+            📧 Timesharesforlife@gmail.com</div>
         <p class="copyright">
             Copyright © 2020 Timeshares For Life | All Rights Reserved | Privacy and
             Cookie Statement | Gavin Giles
@@ -92,4 +117,5 @@
         </div>
     </footer>
 </body>
+
 </html>
